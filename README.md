@@ -150,7 +150,7 @@ After executing build-storage.sh, the image is stored in out/images
 
 ## Burn BIOS
 
-BIOS download link:
+BIOS download link: https://github.com/radxa/orion-oh/releases/tag/bios-v1.0
 1. Copy BIOS to USB flash disk (FAT32)
 2. Entering BIOS
 3. In the BIOS interface, select Boot Manager --> UEFI Shell to enter the UEFI Shell interface
