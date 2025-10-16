@@ -151,13 +151,16 @@ After executing build-storage.sh, the image is stored in out/images.
 
 ## Burn BIOS
 
-BIOS download link: https://github.com/radxa/orion-oh/releases/tag/bios-v1.0
+BIOS download link: https://github.com/radxa/cix-openharmony-manifests/releases/tag/radxa-orion-o6-Harmony-20251016-v1.0
+
 1. Copy BIOS to USB flash disk (FAT32)
 2. Entering BIOS
 3. In the BIOS interface, select Boot Manager --> UEFI Shell to enter the UEFI Shell interface
 
 
 ## Burn image
+
+Images download link: https://github.com/radxa/cix-openharmony-manifests/releases/tag/radxa-orion-o6-Harmony-20251016-v1.0
 
 1. The document author is currently using a Linux environment for burning
 2. Enter fastboot mode (directly enter fastboot mode after burning BIOS, or short-circuit the motherboard boot 2 pins)
