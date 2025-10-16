@@ -1,7 +1,7 @@
 <manifest>
-    <remote fetch="." name="cix" review="" />
-    <remote name="cix_open" fetch="https://gitlab.com/orion-oh" review="" />
-    <remote name="cix_proprietary" fetch="https://gitlab.com/orion-oh" review=" " />
+    <remote fetch="https://gitlab.com/orion-oh-o6" name="cix" review="" />
+    <remote name="cix_open" fetch="https://gitlab.com/orion-oh-o6" review="" />
+    <remote name="cix_proprietary" fetch="https://gitlab.com/orion-oh-o6" review=" " />
 
     <project name="device_board_cix" path="device/board/cix" remote="cix" groups="cix,default,ohos:standard,ohos:chipset" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" />
     <project name="device_soc_cix" path="device/soc/cix" remote="cix" groups="cix,default,ohos:standard,ohos:chipset" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" />
@@ -41,5 +41,5 @@
     <project name="third_party_ffmpeg" path="third_party/ffmpeg" remote="cix" groups="cix,default,ohos:mini,ohos:small,ohos:standard,ohos:system" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" base="7c8b127c09adf280f518f83f6385ae5c07a8bd5c" />
     <project name="third_party_libinput" path="third_party/libinput" remote="cix" groups="cix,default,ohos:standard,ohos:system,ohos:chipset" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" base="d261bdcb6243d80f3decf677ea26f7dbcf4c46a5" />
     <project name="filemanagement_storage_service" path="foundation/filemanagement/storage_service" remote="cix" groups="cix,default,ohos:standard,ohos:system,ohos:chipset" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" base="3770157c4c2dd063030b7192186fb464119199ee" />
-    <project name="communication_wifi" path="foundation/communication/wifi" groups="cix,default,ohos:mini,ohos:small,ohos:standard,ohos:system,ohos:chipset" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" base="e02da6e2c96f58012c455aabbb58923fc675dee9" />
+    <project name="communication_wifi" path="foundation/communication/wifi" remote="cix" groups="cix,default,ohos:mini,ohos:small,ohos:standard,ohos:system,ohos:chipset" upstream="874c4/37d91/cix_v5.0.3_dev" revision="874c4/37d91/cix_v5.0.3_dev" base="e02da6e2c96f58012c455aabbb58923fc675dee9" />
 </manifest>
