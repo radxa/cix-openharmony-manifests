@@ -4,7 +4,7 @@ This guide provides step-by-step instructions for setting up a build environment
 
 ## Build environment setup
 
-Recommend Ubuntu 22.04 64-bit as the build host
+Recommend Ubuntu 22.04 64-bit as the build host.
 
 ## System Requirements
 
@@ -19,7 +19,7 @@ $ chmod +x ~/bin/repo
 ```
 ## Docker environment
 
-Recommend using Docker,The current Docker environment configuration is as follows
+Recommend using Docker,The current Docker environment configuration is as follows.
 
 ```bash
 FROM ubuntu:22.04
@@ -105,10 +105,11 @@ RUN apt-get update && \
 $ mkdir cix-ohos && cd cix-ohos
 $  ~/bin/repo init -u https://github.com/radxa/orion-oh.git -b orion-oh0-v1.0 -m radxa_release.xml
 ```
+Because the code repositories of Cix and HarmonyOS are stored in different locations, we will download them in two parts.
 
-First, pull the HarmonyOS repository
+First, pull the Harmony repository.
 
-Annotate the GitLab repository in manifests/chipsets/radxa-all.xml
+Annotate the GitLab repository in manifests/chipsets/radxa-all.xml.
 
 ```bash
 <!-- <include name="chipsets/cix/radxa_sky1_evb.xml" /> -->
@@ -118,9 +119,9 @@ then run sync
 $ repo sync -j$(nproc)
 ```
 
-After downloading the Harmony repository, it is necessary to set up a proxy to improve the speed of downloading the Cix Gitlab repository
+After downloading the Harmony repository, it is necessary to set up a proxy to improve the speed of downloading the Cix Gitlab repository.
 
-Please uncomment GitLab repository in manifests/chipsets/radxa-all.xml
+Please uncomment GitLab repository in manifests/chipsets/radxa-all.xml.
 ```bash
 <include name="chipsets/cix/radxa_sky1_evb.xml" /> 
 ```
@@ -146,7 +147,7 @@ $ ./build.sh --product-name sky1_evb
 $ cd vendor/cix/scripts
 $ build-storage.sh
 ```
-After executing build-storage.sh, the image is stored in out/images
+After executing build-storage.sh, the image is stored in out/images.
 
 ## Burn BIOS
 
@@ -160,7 +161,7 @@ BIOS download link: https://github.com/radxa/orion-oh/releases/tag/bios-v1.0
 
 1. The document author is currently using a Linux environment for burning
 2. Enter fastboot mode (directly enter fastboot mode after burning BIOS, or short-circuit the motherboard boot 2 pins)
-3. Run fastboot.sh on a Linux terminal until burning is complete
+3. Run fastboot.sh(code location:vendor/cix/scripts) on a Linux terminal until burning is complete
 
 
 
