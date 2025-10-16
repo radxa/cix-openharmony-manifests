@@ -103,7 +103,7 @@ RUN apt-get update && \
 
 ```bash
 $ mkdir cix-ohos && cd cix-ohos
-$  ~/bin/repo init -u https://github.com/radxa/orion-oh.git -b orion-oh0-v1.0 -m radxa_release.xml
+$  ~/bin/repo init -u git@github.com:radxa/cix-openharmony-manifests.git -b orion-oh0-v1.0 -m radxa_release.xml
 ```
 Because the code repositories of Cix and HarmonyOS are stored in different locations, we will download them in two parts.
 
