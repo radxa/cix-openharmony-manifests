@@ -145,7 +145,7 @@ $ ./build.sh --product-name sky1_evb
 
 ```bash
 $ cd vendor/cix/scripts
-$ build-storage.sh
+$ ./build-storage.sh
 ```
 After executing build-storage.sh, the image is stored in out/images.
 
